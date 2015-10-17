@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+
+
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/sidebar-left.css">
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">The Shipyard </a>
+    </div>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-nav">
+        <li>
+            <a href="customerMainpage.html"><i class="fa fa-fw fa-bar-chart-o"></i> My Project</a>
+        </li>
+        <li class="active">
+            <a href="customerChat.html"><i class="fa fa-fw fa-comment"></i> Message</a>
+        </li>
+        <!---
+        <li>
+            <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Issue Tracker</a>
+        </li>
+        <li>
+            <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> File Repo</a>
+        </li>
+        <li>
+            <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Tasks</a>
+        </li>
+        -->
+    </ul>
+    <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Gary Goh <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div class="col-lg-offset-1 content">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Message Box
+            </h1>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+
+        <div class="message-wrap col-lg-offset-1 col-lg-8">
+            <div class="msg-wrap">
+
+
+                <div class="media msg ">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src="img/profile1.jpg">
+                    </a>
+                    <div class="media-body">
+                        <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+                        <h5 class="media-heading">Gary Goh</h5>
+                        <small class="col-lg-10" style="background-color: #ececec">Location H-2, Ayojan Nagar, Near Gate-3, Near
+                            Shreyas Crossing Dharnidhar Derasar,
+                        </small>
+                    </div>
+                </div>
+                <div class="media msg ">
+                    <a class="pull-right" href="#">
+                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src="img/andrew.png">
+                    </a>
+                    <div class="media-body">
+                        <small class="pull-left time"><i class="fa fa-clock-o"></i> 12:10am </small>
+                        <h5 class="media-heading pull-right">Andrew Wong</h5>
+                        <br>
+                        <small class="col-lg-10 pull-right" style="background-color: royalblue; color:#FFFFFF">Arnab Goswami: "Some people close to Congress Party and close to the government had a #secret #meeting in a farmhouse in Maharashtra in which Anna Hazare send some representatives and they had a meeting in the discussed how to go about this all fast and how eventually this will end."</small>
+                    </div>
+                </div>
+                <div class="alert alert-default msg-date">
+                    <strong>Today</strong>
+                </div>
+                <div class="media msg" >
+                    <a class="pull-left" href="#">
+                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src="img/profile1.jpg">
+                    </a>
+                    <div class="media-body">
+                        <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+
+                        <h5 class="media-heading">Gary Goh</h5>
+                        <small class="col-lg-10" style="background-color: #ececec">Arnab Goswami: "Some people close to Congress Party and close to the government had a #secret #meeting in a farmhouse in Maharashtra in which Anna Hazare send some representatives and they had a meeting in the discussed how to go about this all fast and how eventually this will end."</small>
+                    </div>
+                </div>
+                <div class="media msg">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src="img/profile1.jpg">
+                    </a>
+                    <div class="media-body">
+                        <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+
+                        <h5 class="media-heading">Gary Goh</h5>
+                        <small class="col-lg-10" style="background-color: #ececec">Arnab Goswami: "Some people close to Congress Party and close to the government had a #secret #meeting in a farmhouse in Maharashtra in which Anna Hazare send some representatives and they had a meeting in the discussed how to go about this all fast and how eventually this will end."</small>
+                    </div>
+                </div>
+
+                <div class="media msg ">
+                    <a class="pull-right" href="#">
+                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src="img/andrew.png">
+                    </a>
+                    <div class="media-body">
+                        <small class="pull-left time"><i class="fa fa-clock-o"></i> 12:10am </small>
+                        <h5 class="media-heading pull-right">Andrew Wong</h5>
+                        <br>
+                        <small class="col-lg-10 pull-right" style="background-color: royalblue; color:#FFFFFF">Arnab Goswami: "Some people close to Congress Party and close to the government had a #secret #meeting in a farmhouse in Maharashtra in which Anna Hazare send some representatives and they had a meeting in the discussed how to go about this all fast and how eventually this will end."</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="send-wrap ">
+                <br>
+                <textarea class="form-control send-message" rows="3" placeholder="Write a reply..."></textarea>
+
+
+            </div>
+            <br>
+            <div class="btn-panel">
+                <a href="" class=" col-lg-2 btn   btn-default " role="button"><i class="fa fa-cloud-upload"></i> Add Files</a>
+                <a href="" class=" col-lg-2 text-right btn   btn-primary pull-right" role="button"><i class="fa fa-plus"></i> Send Message</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

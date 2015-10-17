@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/sidebar-left.css">
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/timeline.css" media="all" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+    <style>
+        .no-gutter [class*="-2"] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    </style>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        $(function () {
+
+            var links = $('.sidebar-links > a');
+
+            links.on('click', function () {
+
+                links.removeClass('selected');
+                $(this).addClass('selected');
+            })
+        });
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">The Shipyard </a>
+    </div>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-nav">
+        <li  class="active">
+            <a href="customerMainpage.html"><i class="fa fa-fw fa-bar-chart-o"></i>My Project</a>
+        </li>
+        <li>
+            <a href="customerChat.html"><i class="fa fa-fw fa-comment"></i>Message</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Gary Goh <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="col-lg-offset-1 content">
+    <!-- Page Content -->
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Inventory Management System
+            <a class="btn btn-primary" href="http://www.vbtutor.net/wordpress/wp-content/uploads/2013/02/inventory_interface.jpg" target="_blank">
+                <i class="fa fa-eye"></i>&nbsp; preview
+            </a>
+        </h1>
+        <h4 style="color:darkgrey">Click each phase on timeline to check updates for each phase.</h4>
+    </div>
+
+    <!-- /.row -->
+    <div class="row no-gutter">
+        <div onclick="location='customerLead.html'" class="test col-sm-2 col-sm-offset-1" align="center" data-toggle="tooltip" data-placement="bottom" title="02-15,2015 to 03-03,2015 ">Lead<br><img src="img/done.png" class="img-responsive"></div>
+        <div onclick="location='customerReq.html'" class="test col-sm-2" align="center" data-toggle="tooltip" data-placement="bottom" title="03-04,2015 to 04-20,2015 ">Requirement<br><img src="img/done.png" class="img-responsive"></div>
+        <div onclick="location='customerMainpage.html'" class="test col-sm-2" align="center" data-toggle="tooltip" data-placement="bottom" title="04-21,2015 to now " ><strong>Build</strong><br><img src="img/current.png" class="img-responsive"></div>
+        <div class="test col-sm-2" align="center" data-toggle="tooltip" data-placement="bottom" title="have not started ">Testing<br><img src="img/future.png" class="img-responsive"></div>
+        <div  class="test col-sm-2" align="center" data-toggle="tooltip" data-placement="bottom" title="have not started ">Deploy<br><img src="img/future.png" class="img-responsive"></div>
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-7">
+                <h3>Recent Updates - <strong>Build</strong></h3><hr>
+                <ul class="timeline">
+                    <li><!---Time Line Element--->
+                        <div class="timeline-badge  neutral"><i class="fa fa-navicon"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Prototype Version2. Pending for Company logo file</h4>
+                            </div>
+                            <div class="timeline-body"><!---Time Line Body&Content--->
+                                <p>System prototype V2 needs a company logo image.Please send through message.</p>
+                                <div class="pull-right timeline-info">
+                                    <i class="fa fa-user"></i>&nbsp;Andrew &nbsp;
+                                    <i class="fa fa-calendar-check-o"></i>&nbsp;May,19,2015</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><!---Time Line Element--->
+                        <div class="timeline-badge  neutral"><i class="fa fa-navicon"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">User registration function completed </h4>
+                            </div>
+                            <div class="timeline-body"><!---Time Line Body&Content--->
+                                <p>Please check through preview link.</p>
+                                <div class="pull-right timeline-info">
+                                    <i class="fa fa-user"></i>&nbsp;Andrew &nbsp;
+                                    <i class="fa fa-calendar-check-o"></i>&nbsp;May,17,2015
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><!---Time Line Element--->
+                        <div class="timeline-badge neutral"><i class="fa fa-navicon"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Prototype V1 done</h4>
+                            </div>
+                            <div class="timeline-body"><!---Time Line Body&Content--->
+                                <p>please check through preview link.</p>
+
+                                <div class="pull-right timeline-info">
+                                    <i class="fa fa-user"></i>&nbsp;Andrew&nbsp;
+                                    <i class="fa fa-calendar-check-o"></i>&nbsp;Apr,30,2015
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><!---Time Line Element--->
+                        <div class="timeline-badge neutral"><i class="fa fa-navicon"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Build phase started</h4>
+                            </div>
+                            <div class="timeline-body"><!---Time Line Body&Content--->
+                                <p>Build phase has been started.</p>
+                                <div class="pull-right timeline-info">
+                                    <i class="fa fa-user"></i>&nbsp;Andrew&nbsp;
+                                    <i class="fa fa-calendar-check-o"></i>&nbsp;Apr,21,2015
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+
+                <h3>Milestones - <strong>Build</strong></h3><hr>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="panel panel-default calendar">
+                            <div class="panel-heading calendar-month" style="text-align:center;background:#EA9089;color:white"><strong>October</strong></div>
+                            <div class="panel-body">
+                                <div class="thumbnail calendar-date" >
+                                    03
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <strong>Confirmation of Prototype&nbsp;<span class="badge success" style="background-color: darkorange">12 DAYS</span></strong><br>
+                        Confirm the overall look and feel of the whole system and logic structure.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="panel panel-default calendar">
+                            <div class="panel-heading calendar-month" style="text-align:center;background:#EA9089;color:white"><strong>October</strong></div>
+                            <div class="panel-body">
+                                <div class="thumbnail calendar-date" >
+                                    24
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <strong>Account Management function&nbsp;<span class="badge success" style="background-color: royalblue">30 Days</span></strong><br>
+                        Function include: user registration; login; change password; administrator add/edit/delete user accounts;
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+    <!-- /#page-content-wrapper -->
+
+</div>
+</body>
+</html>

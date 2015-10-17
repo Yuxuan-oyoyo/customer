@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/sidebar-left.css">
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/timeline.css" media="all" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+    <style>
+        .no-gutter [class*="-2"] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    </style>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        $(function () {
+
+            var links = $('.sidebar-links > a');
+
+            links.on('click', function () {
+
+                links.removeClass('selected');
+                $(this).addClass('selected');
+            })
+        });
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">The Shipyard </a>
+    </div>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-nav">
+        <li  class="active">
+            <a href="customerMainpage.html"><i class="fa fa-fw fa-bar-chart-o"></i>My Project</a>
+        </li>
+        <li>
+            <a href="customerChat.html"><i class="fa fa-fw fa-comment"></i>Message</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Gary Goh <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="col-lg-offset-1 content">
+    <!-- Page Content -->
+    <div class="col-lg-12">
+        <h1 class="page-header">
+           Inventory Management System
+            <a class="btn btn-primary" href="http://www.vbtutor.net/wordpress/wp-content/uploads/2013/02/inventory_interface.jpg" target="_blank">
+                <i class="fa fa-eye"></i>&nbsp; preview
+            </a>
+        </h1>
+        <h4 style="color:darkgrey">Click each phase on timeline to check updates for each phase.</h4>
+    </div>
+
+    <!-- /.row -->
+    <div class="row no-gutter">
+        <div onclick="location='customerLead.html'" class="test col-sm-2 col-sm-offset-1" align="center" data-toggle="tooltip" data-placement="bottom" title="02-15,2015 to 03-03,2015 ">Lead<br><img src="img/done.png" class="img-responsive"></div>
+        <div onclick="location='customerReq.html'" class="test col-sm-2" align="center" data-toggle="tooltip" data-placement="bottom" title="03-04,2015 to 04-20,2015 "><strong>Requirement</strong><br><img src="img/done.png" class="img-responsive"></div>
+        <div onclick="location='customerMainpage.html'" class="test col-sm-2" align="center" data-toggle="tooltip" data-placement="bottom" title="04-21,2015 to now " >Build<br><img src="img/current.png" class="img-responsive"></div>
+        <div class="test col-sm-2" align="center" data-toggle="tooltip" data-placement="bottom" title="have not started ">Testing<br><img src="img/future.png" class="img-responsive"></div>
+        <div  class="test col-sm-2" align="center" data-toggle="tooltip" data-placement="bottom" title="have not started ">Deploy<br><img src="img/future.png" class="img-responsive"></div>
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-7">
+                <h3>Recent Updates - <strong>Requirement</strong></h3><hr>
+                <ul class="timeline">
+                    <li><!---Time Line Element--->
+                        <div class="timeline-badge  neutral"><i class="fa fa-navicon"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Use case detail has been confirmed</h4>
+                            </div>
+                            <div class="timeline-body"><!---Time Line Body&Content--->
+                                <p>Use case detail has been confirmed through email on 04-20-2015</p>
+                                <div class="pull-right timeline-info">
+                                    <i class="fa fa-user"></i>&nbsp;Andrew &nbsp;
+                                    <i class="fa fa-calendar-check-o"></i>&nbsp;Apr,20,2015</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><!---Time Line Element--->
+                        <div class="timeline-badge  neutral"><i class="fa fa-navicon"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">System Assumption</h4>
+                            </div>
+                            <div class="timeline-body"><!---Time Line Body&Content--->
+                                <p>The current project is estimated under the assumption of load:
+                                    •	150 inventory records made per week
+                                    •	5-20 staff logging in
+                                    •	System usage originating from Singapore
+                                </p>
+                                <div class="pull-right timeline-info">
+                                    <i class="fa fa-user"></i>&nbsp;Andrew &nbsp;
+                                    <i class="fa fa-calendar-check-o"></i>&nbsp;Apr,09,2015
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><!---Time Line Element--->
+                        <div class="timeline-badge neutral"><i class="fa fa-navicon"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Project phase1 use case list</h4>
+                            </div>
+                            <div class="timeline-body"><!---Time Line Body&Content--->
+                                <p>Total number of use cases:20</p>
+                                <p>Main catagory: <br>Account Management(x5)<br> Inventory Recording(x10)<br> Monthly Report Generator(x5)</p>
+                                <div class="pull-right timeline-info">
+                                    <i class="fa fa-user"></i>&nbsp;Andrew&nbsp;
+                                    <i class="fa fa-calendar-check-o"></i>&nbsp;Mar,12,2015
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><!---Time Line Element--->
+                        <div class="timeline-badge neutral"><i class="fa fa-navicon"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Requirement Phase starts today</h4>
+                            </div>
+                            <div class="timeline-body"><!---Time Line Body&Content--->
+                                <p>Requirement gathering phase.</p>
+                                <p>Aims to complete project phase plan and use case lists.</p>
+                                <div class="pull-right timeline-info">
+                                    <i class="fa fa-user"></i>&nbsp;Andrew&nbsp;
+                                    <i class="fa fa-calendar-check-o"></i>&nbsp;Mar,04,2015
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+
+                <h3>Milestones - <strong>Requirement</strong></h3><hr>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="panel panel-default calendar">
+                            <div class="panel-heading calendar-month" style="text-align:center;background:#EA9089;color:white"><strong>April</strong></div>
+                            <div class="panel-body">
+                                <div class="thumbnail calendar-date" >
+                                    20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <strong>Confirmation of use case List&nbsp;<span class="badge success" style="background-color: #00a65a">completed</span></strong><br>
+                        Confirm the total number of use cases to build.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="panel panel-default calendar">
+                            <div class="panel-heading calendar-month" style="text-align:center;background:#EA9089;color:white"><strong>April</strong></div>
+                            <div class="panel-body">
+                                <div class="thumbnail calendar-date" >
+                                    10
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <strong>Confirmation of System Scope&nbsp;<span class="badge success" style="background-color: #00a65a">completed</span></strong><br>
+                        To confirm the estimated number of users and number of record/month.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- /#page-content-wrapper -->
+
+</div>
+</body>
+</html>
